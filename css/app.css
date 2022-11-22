@@ -1,0 +1,64 @@
+h1{
+    text-align: center;
+}
+.container{
+    width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+}
+.header{
+    background-color: cadetblue;
+}
+.header__contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width: 400px){ 
+    .header__contenido{
+        flex-direction: row;
+    }
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+}
+main{
+    height: 80vh;
+}
+
+@media (min-width: 785px){ 
+    .principal{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+.principal h3{
+    text-align: center;
+}
+@media (min-width: 400px){ 
+    .principal__submenu{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+.principal__submenu h4{
+    text-align: center;
+}
+.principal__submenu a{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    background-color: cornflowerblue;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    width: 200px;
+    border-radius: .5rem;
+    margin-top: 2rem;
+}

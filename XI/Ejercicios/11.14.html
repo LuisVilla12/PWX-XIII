@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Escriba una sccucncb de comandos con base en el programa del ejercicio 1 1.13 que reciba como entrada varias líneas 
+        de tcxro y urilicc el método S trin g   IndexOf para determinar el núm ero total d cocurrencbs de cada Ierra del alfabeto 
+        en ese texto. Las Ierras mayúsculas y minúsculas deben contarse com o una sola. Almacene los totales para cada letra 
+        en un arreglo, e imprima los valores en formato tabular en un dem ento te x ta re a  de H T M L 5 después de que se 
+        hayan determinado los totales.</p>
+    <script>
+            let btnGuardar = document.querySelector('#save');
+            btnGuardar.addEventListener('click', e=>{
+                let frase = document.querySelector('.valor').value;
+                let respuesta= document.querySelector('.respuesta');
+                respuesta.textContent=`Frase: ${frase}, frase en mayusculas: ${frase.toUpperCase()}, frase en minusculas ${frase.toLowerCase()}`;
+                
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Considere un arreglo de dos por tres que almacena enteros.</p>
+    <p>    a)   Escriba una instrucción para declarar y  crear el arreglo t .</p>
+    <pre>
+        <code>
+            let t=new Array(2); //signa  dos  f i l a s
+            t[0]= new Array(3); //asigna tres columnas a la fila 1
+            t[1]= new Array(3); //asigna tres columnas a la fila 2
+        </code>
+    </pre>
+    <p>    b)  ¿Cuántas filas tiene t? <mark>Dos filas</mark> </p> 
+    <p>    c)  ¿Cuántas columnas tiene t?<mark>Tres columnas</mark></p>
+    <p>    d)  ¿Cuántos elementos tiene t?<mark>6 elementos</mark></p>
+    <p>    e)  Escriba los nombres de todos los elementos en la fila 1 de t .</p>
+    <code>
+        t[0][0]=0;
+        t[0][1]=0;
+        t[0][2]=0;
+    </code>
+    <p>    f)  Escriba los nombres de todos los elementos en la tercera columna de t .</p>
+    <pre>
+        <code>
+            t[0][2]=0;
+            t[1][2]=0;
+        </code>
+    </pre>
+    <p>    g)  Escriba una sola instrucción para establecer el elemento  de t  en la fila  1 y la columna 2 en cero.</p>
+    <pre>
+        <code>
+            t[0][1]=0;
+        </code>
+    </pre>
+    <p>    h)  Escriba una serie de instrucciones para inicializar cada elemento de t  en cero.</p>
+    <pre>
+        <code>
+            t[0][0]=0;
+            t[0][1]=0;
+            t[0][2]=0;
+            t[1][0]=0;
+            t[1][1]=0;
+            t[1][2]=0;
+        </code>
+    </pre>
+    <p>    i)  Escriba una instrucción for anidada para inicializar cada elemento  de t  en cero.</p>
+    <pre>
+        <code>
+            for (let i = 0; i < 2; i++) {  
+                for (let j = 0; j < 3; j++) {
+                 b[i][j]=0;    
+                }
+              }
+        </code>
+    </pre>
+    <!--TODO: Menor de una matriz-->
+    <p>    j)  Escriba una serie de instrucciones para determinar e imprimir el valor más pequeño en el arreglo t.</p>
+    <p>    k)  Escriba una instrucción sin repetición para mostrar los elementos de la  primera fila  de t.</p>
+    <pre>
+        <code>
+            for (let i = 0; i < 3; i++) {  
+                console.log(t[0][i]);    
+              }
+        </code>
+    </pre>
+    <p>    I)  Escriba una serie de instrucciones para imprimir el arreglo t en un formato tabular ordenado. Liste los índices de 
+        columnas como encabezados a lo largo  de la  parte superior y  liste los índices de fila  en la  parte izquierda de cada 
+        fila.</p>
+        <pre>
+            <code>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fila</th> <th>Columna 1</th><th>Columna 2</th><th>Columna 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fila 1</td><td>1</td> <td>2</td> <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Fila 1</td><td>1</td><td>2</td> <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </code>
+        </pre>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Escriba una secuencia de comandos que reciba texto de un formlario de H T M L5  y lo imprima tanteen mayúsculas 
+        como en minúsculas.</p>
+        <form action="">
+            <label for="">Ingrese su frase:</label>
+            <input type="text" class="valor">
+        </form>
+        <button id="save">Resultado</button>
+        <p class="respuesta"></p>
+        <script>
+            let btnGuardar = document.querySelector('#save');
+            btnGuardar.addEventListener('click', e=>{
+                let frase = document.querySelector('.valor').value;
+                let respuesta= document.querySelector('.respuesta');
+                respuesta.textContent=`Frase: ${frase}, frase en mayusculas: ${frase.toUpperCase()}, frase en minusculas ${frase.toLowerCase()}`;
+                
+            });
+        </script>
+</body>
+</html> 

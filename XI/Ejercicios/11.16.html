@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Escríba una secuencia de comandos que lea una serie de cadenas c imprima en un elemento te x t a r e a  de H TM L5 
+        sólo aqudlas cadenas q u e terminen con los caracteres “ed”.</p>
+        <form action="">
+            <label for="">Ingrese la frase:</label>
+            <input type="text" class="valor">
+        </form>
+        <button id="save">Resultado</button>
+        <p class="respuesta"></p>
+    <script>
+        let btnGuardar = document.querySelector('#save');
+        btnGuardar.addEventListener('click', e=>{
+            let frase = document.querySelector('.valor').value;
+            let respuesta= document.querySelector('.respuesta');
+            let palabras=frase.split(' ');
+            const reversed = palabras.reverse();
+            let aux=reversed.join(' ');
+            respuesta.textContent=`Frase: ${frase}, frase inversa: ${aux}`;
+    
+        });        
+    </script>
+</body>
+</html>

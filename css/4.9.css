@@ -1,0 +1,17 @@
+div{
+    margin: 4rem auto;
+}
+.btn{
+    border: 1px solid sandybrown;
+    padding: 2rem 3rem;
+    background-color: bisque;
+    transition: all .3s ease;
+    text-decoration: none;
+    color: black;
+}
+.btn:hover{
+    border: dashed;
+    padding: 3rem 2rem;
+    background-color: cadetblue;
+    color: white;
+}

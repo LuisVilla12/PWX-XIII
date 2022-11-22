@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Escriba instrucciones que realicen las siguientes operaciones para un arreglo unidimensional:</p>
+    <p> Establecer los 10 elementos del  arreglo cuentas en ceros.</p>
+    <pre>
+        <code>
+            let cuentas=[];
+            for (let index = 0; index  &lt;10; index++) {
+                cuentas[index]=0
+            }
+        </code>
+    </pre>
+    <p>Sumar 1 a cada uno de los 15 elementos del arreglo bono.</p>
+    <pre>
+        <code>
+            let bono=[];
+            for (let index = 0; index&lt;15; index++) {
+                bono[index]=bono[index]+1;
+            }
+        </code>
+    </pre>
+    <p>Mostrar los cinco valores del  arreglo meJoresPuntuaciones, separado por espacios.</p>   
+    <pre>
+        <code>
+            let meJoresPuntuaciones=[10,9,4,10,2,9,5,7,8];
+            let a =meJoresPuntuaciones.sort((a, b) => b - a );
+            let resultado = a.slice(0, 5);
+            console.log(resultado)
+
+        </code>
+    </pre>
+</body>
+</html>

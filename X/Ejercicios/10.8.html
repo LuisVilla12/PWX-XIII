@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>    Escriba instrucciones de JavaScript para realizar cada una de las siguientes tareas:</p>
+    <p>    a)  Mostrar el valor de un séptimo elemento de un  arreglo f .</p>
+    <pre>
+        <code>
+            console.log(f[7]);
+        </code>
+    </pre> 
+    <p>    b)  Inicializar cada uno de los cinco elementos del arreglo unidimensional g en 8 .</p>
+    <pre>
+        <code>
+            let a=[];
+            for (let i = 0; i &lt;5; i++) {
+                a[i]=8;
+            }   
+            a.forEach(as=>console.log(as))
+        </code>
+    </pre> 
+    <p>    c)  Calcular el total de los elementos del arreglo c, que contiene 100 elementos numéricos.</p>
+    <pre>
+        <code>
+            let a=[];
+            let total=0;
+            for (let i = 0; i &lt;100; i++) {
+              a[i]=Math.ceil(Math.random()*30);
+              total+=a[i]
+            }
+            console.log(total);
+        </code>
+    </pre> 
+    <p>    d)  Copiar el arreglo a de 11 elementos en la primera porción del arreglo b, que contiene 34 elementos.</p>
+    <pre>
+        <code>
+            let a=[];
+            let b=[];
+            for (let i = 0; i&lt;11; i++) {
+                a[i]=Math.ceil(Math.random()*30);
+            }
+            for (let i = 0; i&lt;34; i++) {
+                b[i]=Math.ceil(Math.random()*30);
+            }
+            b= [...a,...b]
+            b.forEach(aa=>console.log(aa))
+        </code>
+    </pre> 
+    <p>    e)  Determinar e imprimir el valor más pequeño y el más grande contenido en el rreglo de  99 elementos de punto flotante. 
+    </p>
+    <pre>
+        <code>
+            const a=[];
+            for (let i = 0; i&lt;99 ; i++) {
+                a[i]=(Math.random()*30);
+            }
+            let valor_menor= Math.min(...a);
+            console.log(`El menor valor es ${valor_menor}`);
+        </code>
+    </pre> 
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Use un arreglo unidimensional para resolver el siguiente problema: una empresa paga a su personal de ventas con base en comisiones. El personal de ventas recibe $200 por semana más el 9  por ciento de sus ventas brutas para esa semana. 
+        Por ejemplo, un vendedor con ventas brutas de $5000 en una semana recibe $200 más el 9 por ciento de $5000. o un total de $650. Escriba una secuencia de comandos (usando un arreglo de contadores) que obtener las ventas brutas  para cada empleado por medio de un formulario y determine cuántos vendedores obtuvieron salarios en cada uno de los siguientes rangos (suponga que el salario de cada vendedor se trunca a un monto entero):</p>
+        <table>
+            <thead>
+                <tr><th>Valor</th> <th>Cantidad</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>$200 a 299</td>
+                    <td class="a"></td>
+                </tr>
+                <tr>
+                    <td>$300 a 399</td>
+                    <td class="b"></td>
+                </tr>
+                <tr>
+                    <td>$400 a 499</td>
+                    <td class="c"></td>
+                </tr>
+                <tr>
+                    <td>$500 a 599</td>
+                    <td class="d" ></td>
+                </tr>
+                <tr>
+                    <td>$600 a 699</td>
+                    <td class="e"></td>
+                </tr>
+                <tr>
+                    <td>$700 a 799</td>
+                    <td class="f"></td>
+                </tr>
+                <tr>
+                    <td>$800 a 899</td>
+                    <td class="g"></td>
+                </tr>
+            </tbody>
+        </table>
+   
+    <form action="">
+        <label for="">Ingrese las ventas brutas del vendedor:</label>
+        <input type="number" class="valor">
+    </form>
+    <button id="save">Guardar</button>
+    <script>
+        let vendedor=[];
+        let contA=0;
+        let contB=0;
+        let contC=0;
+        let contD=0;
+        let contE=0;
+        let contF=0;
+        let contG=0;
+        actualizartext();
+
+        let btnGuardar = document.querySelector('#save');
+        btnGuardar.addEventListener('click', e=>{
+            let inputNumber = parseInt(document.querySelector('.valor').value);
+            let calculo = inputNumber*.09+200;
+            vendedor.push(inputNumber);
+            console.log(vendedor);
+            actualizarCont(calculo);
+            actualizartext();
+        })
+        function actualizarCont(calculo){
+            if(calculo>=200 && calculo<=299){
+                contA++;
+            }
+            if(calculo>=300 && calculo<=399){
+                contB++;
+            }
+            if(calculo>=400 && calculo<=499){
+                contC++;
+            }
+            if(calculo>=500 && calculo<=599){
+                contD++;
+            }
+            if(calculo>=600 && calculo<=699){
+                contE++;
+            }
+            if(calculo>=700 && calculo<=799){
+                contF++;
+            }
+            if(calculo>=800 && calculo<=899){
+                contG++;
+            }
+        }
+        function actualizartext(){
+            let a = document.querySelector('.a');
+            let b = document.querySelector('.b');
+            let c = document.querySelector('.c');
+            let d = document.querySelector('.d');
+            let e = document.querySelector('.e');
+            let f = document.querySelector('.f');
+            let g = document.querySelector('.g');
+            a.innerHTML=''+contA;
+            b.innerHTML=''+contB;
+            c.innerHTML=''+contC;
+            d.innerHTML=''+contD;
+            e.innerHTML=''+contE;
+            f.innerHTML=''+contF;
+            g.innerHTML=''+contG;
+        }
+    </script>
+</body>
+</html>

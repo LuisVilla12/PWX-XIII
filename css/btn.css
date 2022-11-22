@@ -1,0 +1,12 @@
+
+.btn__index{
+    background-color: cornflowerblue;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    width: 8rem;
+    text-align: center;
+    border-radius: .5rem;
+    margin-top: 5rem;
+}

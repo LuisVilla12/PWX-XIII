@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Escriba una secuencia de comandos que reciba como entrada varias líneas de texto y un carácter de búsqueda, y que 
+        utilice el método S tri ng  1 ndexOf para determinar d  número de ocurrencias de e s e  carácter en el texto.</p>
+        <script>
+            let btnGuardar = document.querySelector('#save');
+            btnGuardar.addEventListener('click', e=>{
+                let aux_dos="";
+                let frase = document.querySelector('.valor').value;
+                let respuesta= document.querySelector('.respuesta');
+                //let frase;
+                let palabras=frase.split(' ');
+                palabras.forEach((palabra)=>{
+                    let arr = [...palabra];
+                    let primara=arr[0];
+                    let ultima=arr[arr.length-1];
+                    arr[0]=ultima;
+                    arr[arr.length-1]=primara +"ae";
+                    let aux=arr.join('');
+                    aux_dos+=" "+aux;
+                    console.log(aux);
+                    console.log(aux_dos);
+                })
+                respuesta.textContent=`Valor original: ${frase},Redondeado: ${aux_dos}`;
+            });
+            
+        </script>
+    </body>
+</html>
